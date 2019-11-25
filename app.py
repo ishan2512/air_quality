@@ -34,5 +34,4 @@ def predict():
             return "please check if value are entered correctly"
     return render_template('predict.html',prediction=model_prediction)
 if __name__ == "__main__":
-    app.debug = True
-    app.run(host='0.0.0.0')
+    app.run(debug=True)
