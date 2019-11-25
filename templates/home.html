@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html >
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title>air quality prediction</title>
+  </head>
+  <body>
+    <h1><<div style="text-align:center"><font color="blue"> Air Quality Predicting</font>
+    </div></h1>
+    <hr>
+    <br>
+    <h2><div style="text-align:center">Fill the following fields
+    </div></h2>
+    <br>
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <form class="" action="/predict" method="POST">
+            <div class="form-group">
+              <label for="temperature"><p class="font-weight-bold">temperature</p></label>
+              <input type="text" name="temperature">
+              <small id="myhelp" class="form-text text-muted">enter the value</small>
+            </div>
+            <div class="form-group">
+              <label for="humidity"><p class="font-weight-bold">humidity</p></label>
+              <input type="text" name="humidity">
+              <small id="myhelp" class="form-text text-muted">enter the value</small>
+            </div>
+            <div class="form-group">
+              <label for="city"><p class="font-weight-bold">city</p></label>
+              <input type="text" name="city">
+              <small id="myhelp" class="form-text text-muted">enter the value</small>
+            </div>
+            <div class="form-group">
+              <label for="month"><p class="font-weight-bold">month</p></label>
+              <input type="text" name="month">
+              <small id="myhelp" class="form-text text-muted">enter the value</small>
+            </div>
+
+            <input class="btn btn-primary" type="submit" value="submit">
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
